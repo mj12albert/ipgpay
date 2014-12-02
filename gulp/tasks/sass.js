@@ -4,7 +4,6 @@ var argv = require('yargs').argv;
 var sass = require('gulp-ruby-sass');
 var minifycss = require('gulp-minify-css');
 var rename = require('gulp-rename');
-// var tallyWeight = require('../util/tallyWeight');
 var logger = require('../util/logger');
 
 !argv.production
@@ -38,7 +37,7 @@ var sassBuild = function() {
   return gulp.src('sass/**/*.{scss,sass}')
     .pipe(sass({
       bundleExec: true,
-      compass: true,
+      // compass: true,
       sourcemap: false
     }))
     .on('error', function(err) {
@@ -47,10 +46,6 @@ var sassBuild = function() {
     .pipe(rename("manifest.css"))
     .pipe(minifycss({ keepSpecialComments: 0 }))
     .pipe(gulp.dest('./deploy/css'));
-    /*.on('end', function() {
-      gulp.src('./deploy/css/*.css')
-        .pipe(tallyWeight());
-    });*/
 };
 
 function errorHandler(err) {
