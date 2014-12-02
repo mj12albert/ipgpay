@@ -14,7 +14,7 @@ gulp.task('jekyll', ['clean'], function() {
 })
 
 var jekyllWatch = function() {
-  exec('cd source && bundle exec jekyll build --watch')
+  exec('bundle exec jekyll build --watch')
 
   gulp.watch('source/**/*.html')
     .on('change', function(e) {
@@ -23,7 +23,7 @@ var jekyllWatch = function() {
 }
 
 var jekyllBuild = function() {
-  exec('cd source && bundle exec jekyll build', function(err, stdout, stderr) {
+  exec('bundle exec jekyll build', function(err, stdout, stderr) {
     // console.log(stdout);
     return gulp.src(['build/index.html'])
       .pipe(processhtml('index.html'))

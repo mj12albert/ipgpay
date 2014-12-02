@@ -10,3 +10,4 @@
 * This whole thing builds with gulp (gulpjs.com) into a build/ directory by running `gulp` from the root dir
 * The default task scrubs the build/ directory, and runs 2 watch tasks for sass+css and jekyll+html
 * `gulp --production` is meant to build everything with minified css, uglified js, cleaned up html, but isn’t properly configured
+* The css/html can also be built without gulp by running the compass and jekyll commands directly from the root dir
