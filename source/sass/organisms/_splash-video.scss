@@ -1,0 +1,85 @@
+//=============================================================================/
+//                            ALBERT YU & CO.                                  /
+//=============================================================================/
+//                                                                             /
+//       PROJECT: 141102                                                       /
+//        CLIENT: IPGPAY + BeansBox                                            /
+//   DELIVERABLE: Static front-end prototype                                   /
+//         CLASS: Organism                                                     /
+//         TITLE: Splash video                                                 /
+//                                                                             /
+//=============================================================================/
+
+.splash {
+  position: relative;
+}
+
+// <video>
+.splash-video {
+  position: relative;
+  display: block;
+}
+
+// <div>
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(48,48,48,0.75);
+}
+
+.content {
+  position: absolute;
+  top: 33%;
+  width: 100%;
+  text-align: center;
+}
+
+  .content img {
+    display: block;
+    margin: 0 auto 1.5rem;
+    padding-left: 5.7rem;
+    width: 23rem;
+}
+
+  .content h1 {
+    color: $white;
+    line-height: 1.375;
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .content .btn-hero-cta {
+    display: inline-block;
+    padding: 0.3rem 2.5rem;
+    border: 1px solid #a8a8a8;
+    border-radius: 26px;
+
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #a8a8a8;
+
+    &.merchants {
+      margin-right: 1.25rem;
+
+      &:hover,
+      &:focus {
+        color: #fafafa;
+        background-color: #069de1;
+        border-color: #069de1;
+        @include transition(all 350ms);
+      }
+    }
+
+    &.developers {
+      &:hover,
+      &:focus {
+        color: #fafafa;
+        background-color: #244ea1;
+        border-color: #244ea1;
+        @include transition(all 350ms);
+      }
+    }
+  }

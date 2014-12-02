@@ -1,0 +1,125 @@
+---
+title: Sign Up | IPGPAY
+route: signup
+---
+
+{% include document-header.html %}
+
+<!-- SVG SPRITE SHEET -->
+{% include icons.svg %}
+
+<body class="form">
+  <div class="container form-wrapper">
+
+    <div class="fs-form-wrap" id="fs-form-wrap">
+      <div class="fs-title">
+        <svg class="logo-element-fullcolour" id="logo-element-fullcolour">
+          <use xlink:href="#icon-element-color" />
+        </svg>
+
+        <!-- <button class="live-support">Live Support</button> -->
+        <!-- <h1>Sign up for IPGPAY</h1> -->
+      </div>
+
+      <form id="myform" class="fs-form fs-form-full" autocomplete="off">
+        <ol class="fs-fields" id="fs-fields">
+          <li>
+            <label class="fs-field-label fs-anim-upper" for="q1">What's your name?</label>
+            <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Bruce Wayne" required/>
+            <a href="#" class="cont-button">Continue</a>
+          </li>
+
+          <li>
+            <label class="fs-field-label fs-anim-upper" for="q2" data-info="We respect your privacy, and you will never receive any spam from us.">What's your email address?</label>
+            <input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="bruce@wayne.co" required/>
+            <a href="#" class="cont-button">Continue</a>
+          </li>
+
+          <li>
+            <label class="fs-field-label fs-anim-upper" for="q3">What’s the name of your company?</label>
+            <input class="fs-anim-lower" id="q3" name="q3" type="text" placeholder="Wayne Enterprises" required/>
+            <a href="#" class="cont-button">Continue</a>
+          </li>
+
+          <li>
+            <label class="fs-field-label fs-anim-upper" for="q4">Where is the URL to the company website?</label>
+            <input class="fs-anim-lower" id="q4" name="q4" type="url" placeholder="wayne.co" required/>
+            <a href="#" class="cont-button">Continue</a>
+          </li>
+
+          <li data-input-trigger>
+            <label class="fs-field-label fs-anim-upper" for="q3">How old is the company?</label>
+            <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+              <span><input id="q3b" name="q3" type="radio" value="1 year or less"/><label for="q3b" class="radio-junior">1 year or less</label></span>
+              <span><input id="q3c" name="q3" type="radio" value="1-4 years"/><label for="q3c" class="radio-intermediate">1–4 years</label></span>
+              <span><input id="q3a" name="q3" type="radio" value="Over 4 years"/><label for="q3a" class="radio-senior">Over 4 years</label></span>
+            </div>
+          </li>
+
+          <li>
+            <label class="fs-field-label fs-anim-upper" for="q5" data-info="This will help us determine which services and features might benefit you the most.">Tell us a little bit about your business:</label>
+            <textarea class="fs-anim-lower description" id="q5" name="q5" placeholder="Describe here"></textarea>
+            <a href="#" class="cont-button">Continue</a>
+          </li>
+
+          <!--<li>
+            <label class="fs-field-label fs-anim-upper" for="q5">What's your budget?</label>
+            <input class="fs-mark fs-anim-lower" id="q5" name="q5" type="number" placeholder="1000" step="100" min="100"/>
+          </li> -->
+
+        </ol><!-- /fs-fields -->
+        <button class="fs-submit" type="submit">Submit</button>
+      </form><!-- /fs-form -->
+
+
+
+  </div><!-- /fs-form-wrap -->
+
+  <div class="faqs">
+    <div class="inner">
+      <h1>Frequently Asked Questions</h1>
+
+      <section class="faq-col">
+        <div>
+          <input id="faq-1" name="question-1" type="checkbox" />
+          <label for="faq-1">How long does it take to sign up with IPGPAY?</label>
+          <article>
+            <p>It typically takes two to six weeks once the required documents are received. Prospective merchants need to provide a range of documentation (e.g. copies of passports) to establish the identity of key officers and shareholders. This process is known as a Know Your Customer check and is required by anti-money- laundering regulations. Merchants will also be asked to provide a range of financial information to establish their credit position. IPGPAY's multilingual team will assist merchants throughout the process.</p>
+          </article>
+        </div>
+
+        <div>
+          <input id="faq-2" name="question-2" type="checkbox" />
+          <label for="faq-2">Are there types of business that are not suitable for IPGPAY?</label>
+          <article>
+            <p>Yes. Those selling pornography or engaged in illegal or high-risk activities are not suitable. Please contact us to see if your business is suitable for the IPGPAY solution.</p>
+          </article>
+        </div>
+      </section>
+
+
+      <section class="faq-col">
+        <div>
+          <input id="faq-3" name="question-3" type="checkbox" />
+          <label for="faq-3">I'm just starting a business and I don't have any trading history. Is IPGPAY suitable for me?</label>
+          <article>
+            <p>Without a trading history, it is difficult for a new business to obtain a direct merchant account through a provider like IPGPAY. Aggregators are a great choice for new merchants. But once you have established a trading history, let us know because the IPGPAY solution will be perfect for you.</p>
+          </article>
+        </div>
+
+        <div>
+          <input id="faq-4" name="question-4" type="checkbox" />
+          <label for="faq-4">Why should I use IPGPAY?</label>
+          <article>
+            <p>IPGPAY is proudly focused exclusively on the Asia-Pacific region and its unique needs. Our multilingual team is based in Hong Kong, our pricing is competitive, our service is personalised and the IPGPAY Gateway is best in breed.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  {% include site-footer.html %}
+
+  </div><!-- /container -->
+
+{% include document-footer.html %}

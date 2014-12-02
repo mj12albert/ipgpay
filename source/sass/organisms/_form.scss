@@ -1,0 +1,201 @@
+//=============================================================================/
+//                            ALBERT YU & CO.                                  /
+//=============================================================================/
+//                                                                             /
+//       PROJECT: 141102                                                       /
+//        CLIENT: IPGPAY + BeansBox                                            /
+//   DELIVERABLE: Static front-end prototype                                   /
+//         CLASS: Organism                                                     /
+//         TITLE:                                                              /
+//                                                                             /
+//=============================================================================/
+
+html.signup,
+body.form,
+.container.form-wrapper {
+  height: 100%;
+}
+
+// <div>
+.form-wrapper {
+}
+
+.fs-form-wrap {
+  background-color: #f0f0f6;
+  height: 75%;
+}
+
+.fs-form-overview {
+  background-color: #efefff;
+  padding-top: 8.5em;
+  background: none;
+}
+
+.fs-title {
+  background-color: rgba(250,250,250, 0.95);
+  border-bottom: 1px solid #ededed;
+  padding: 1.75rem 2rem 0.875rem;
+  z-index: 999;
+}
+
+.fs-title .logo-element-fullcolour {
+  width: 4.3rem;
+  height: 2rem;
+}
+
+ol.fs-fields {
+  // height: 400px;
+}
+
+.fs-field-label {
+  font-size: 1.5rem;
+  color: desaturate(#84AADD, 20);
+}
+
+.fs-form-overview .fs-field-label {
+  @extend %avenirMedium;
+  font-size: 1.125rem;
+}
+
+.fs-form-overview .fs-fields-input {
+  font-size: 1.875rem;
+}
+
+.fs-radio-group.clearfix {
+  @include clearfix;
+}
+
+a.cont-button {
+  font-size: 1.1rem;
+  display: inline-block;
+  line-height: 1;
+  padding: 0.75rem 2.5rem 0.6rem;
+  border: 1px solid desaturate(#84AADD, 20);
+  border-radius: 26px;
+  margin-top: 2.5rem;
+  background-color: desaturate(#84AADD, 20);
+  color: lighten(desaturate(#84AADD, 20), 20);
+  @include transition(all 200ms);
+
+  &:link,
+  &:visited,
+  &:active {
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #4C80CC;
+    border-color: #4C80CC;
+    color: #ededfa;
+    @include transition(all 200ms);
+  }
+}
+
+.fs-form-overview a.cont-button {
+  display: none;
+}
+
+.fs-fields input {
+  color: saturate(#4169AB, 15);
+  border-bottom: 2px solid lighten(desaturate(#4169AB, 25), 40);
+}
+
+.fs-fields input:focus,
+.fs-fields textarea:focus {
+  background-color: rgba(200,200,200,0.15);
+}
+
+.fs-form-overview .fs-fields input,
+.fs-form-overview .fs-fields textarea {
+  font-size: 1.5rem;
+  color: #2F4C7C;
+}
+
+.fs-form-overiew .fs-fields textarea {
+  // background-color: rgba(200,200,200,0.15);
+  height: 160px;
+}
+
+.fs-form-overiew .fs-fields textarea:focus {
+  background-color: rgba(200,200,200,0.15);
+}
+
+textarea.description {
+  margin-top: 1rem;
+}
+
+// nav dots
+.fs-nav-dots button:first-child:hover::before,
+.fs-nav-dots button:first-child.fs-dot-current::before {
+  background: #4E99CC;
+}
+
+.fs-nav-dots button:nth-child(2):hover::before,
+.fs-nav-dots button:nth-child(2).fs-dot-current::before {
+  background: #4B84C5;
+}
+
+.fs-nav-dots button:nth-child(3):hover::before,
+.fs-nav-dots button:nth-child(3).fs-dot-current::before {
+  background: #486FBF;
+}
+
+.fs-nav-dots button:nth-child(4):hover::before,
+.fs-nav-dots button:nth-child(4).fs-dot-current::before {
+  background: #455AB8;
+}
+
+.fs-nav-dots button:nth-child(5):hover::before,
+.fs-nav-dots button:nth-child(5).fs-dot-current::before {
+  background: #4245B2;
+}
+
+.fs-nav-dots button:nth-child(6):hover::before,
+.fs-nav-dots button:nth-child(6).fs-dot-current::before {
+  background: #3F30AB;
+}
+
+.fs-progress {
+  top: 0;
+  background: linear-gradient(to bottom, #486fbf 0%,#3f30ab 100%);
+}
+
+button.fs-submit {
+  // font-size: 1.1rem;
+  // display: inline-block;
+  line-height: 1;
+  padding: 0.875rem 2.5rem 0.75rem;
+  border: 1px solid desaturate(#84AADD, 20);
+  border-radius: 26px;
+  background-color: desaturate(#84AADD, 20);
+  color: lighten(desaturate(#84AADD, 20), 20);
+  @include transition(all 200ms);
+
+  &:hover,
+  &:focus {
+    background-color: #4C80CC;
+    border-color: #4C80CC;
+    color: #ededfa;
+    @include transition(all 200ms);
+  }
+}
+
+button.live-support {
+  float: right;
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0.875rem 2.5rem 0.75rem;
+  border: 1px solid desaturate(#7C76C7, 20);
+  border-radius: 26px;
+  background-color: desaturate(#7C76C7, 20);
+  color: lighten(desaturate(#7C76C7, 20), 20);
+  @include transition(all 200ms);
+
+  &:hover,
+  &:focus {
+    background-color: saturate(#7C76C7, 10);
+    border-color: saturate(#7C76C7, 10);
+    color: #ededfa;
+    @include transition(all 200ms);
+  }
+}

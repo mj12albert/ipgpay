@@ -1,0 +1,91 @@
+//=============================================================================/
+//                            ALBERT YU & CO.                                  /
+//=============================================================================/
+//                                                                             /
+//       PROJECT: 141102                                                       /
+//        CLIENT: IPGPAY + BeansBox                                            /
+//   DELIVERABLE: Static front-end prototype                                   /
+//         CLASS: Organism                                                     /
+//         TITLE:                                                              /
+//                                                                             /
+//=============================================================================/
+
+.footer {
+  @include clearfix;
+  padding: 5.5rem 0 7.5rem;
+}
+
+  .footer h4 {
+    text-transform: uppercase;
+
+    margin-bottom: 2rem;
+  }
+
+  .footer a {
+    font-size: 14px;
+  }
+
+  .footer .logo-element-grayscale {
+    width: 5rem;
+    opacity: 0.5;
+  }
+
+.ft-col {
+  @include span-columns(1 of 6);
+
+  &:first-of-type {
+    margin-left: 10.85rem;
+  }
+
+  &:nth-child(2) {
+    margin-left: 2rem;
+  }
+}
+
+// DARK
+.footer.dark {
+  background-color: desaturate(#16193c, 45);
+
+  h4 {
+    color: lighten(#6a6a6d, 10);
+  }
+
+  a {
+    &:link,
+    &:visited,
+    &:active {
+      color: darken(desaturate(#84AADD, 30), 20);
+    }
+
+    &:hover,
+    &:focus {
+      color: #84AADD;
+    }
+  }
+}
+
+// LIGHT
+.footer.light {
+  background-color: desaturate(#B7D2E5, 25);
+
+  h4 {
+    color: lighten(#2F4C7C, 20);
+  }
+
+  a {
+    &:link,
+    &:visited,
+    &:active {
+      color: #84AADD;
+    }
+
+    &:hover,
+    &:focus {
+      color: darken(#4C80CC, 15);
+    }
+  }
+
+  svg {
+    opacity: 0.5;
+  }
+}

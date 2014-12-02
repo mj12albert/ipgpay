@@ -1,0 +1,82 @@
+---
+title: IPGPAY
+route: home
+---
+
+{% include document-header.html %}
+
+
+<body>
+	<div class="site-main">
+
+		<nav class="header dark" id="header">
+			<ul class="navigation">
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Developers</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+				<a href="/signup"class="btn-sign-up">Sign Up</a>
+			</ul>
+		</nav>
+
+		<section class="splash">
+			<video autoplay loop poster="/assets/bg.jpg" class="splash-video" id="splash-video">
+				<source src="/assets/bg.webm" type="video/webm">
+			</video>
+
+			<div class="hero">
+				<div class="content">
+					<img src="/assets/logo.svg" alt="">
+					<h1>Online payment solutions <br>for Asia-Pacific</h1>
+					<a href="#" class="btn-hero-cta merchants">Merchants</a>
+					<a href="#" class="btn-hero-cta developers">Developers</a>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="cut-in light">
+			<h1>IPGPAY is a full-featured, easy-to-integrate payment gateway for online merchants looking for a flexible and customisable payment solution for growing businesses.</h1>
+		</section>
+
+		<section class="callouts">
+			<a href="#" class="callout features">
+				<svg class="features-icon" id="features-icon">
+					<use xlink:href="#icon__callout--features" />
+				</svg>
+
+				<h2>Full-featured</h2>
+				<p>Supports all kinds of payments - online shops, mobile commerce, subscription payments, <br>donations and beyond.</p>
+				<br>
+				<span href="#" class="btn-cta">Learn More</span>
+			</a>
+
+			<a href="#" class="callout integration">
+				<svg class="integration-icon" id="integration-icon">
+					<use xlink:href="#icon__callout--integration" />
+				</svg>
+
+				<h2>Easy to integrate</h2>
+				<p>Simple integration using a hosted, customisable payment page or a Direct Integration Application Programming Interface (API).</p>
+				<br>
+				<span href="#" class="btn-cta">Learn More</span>
+			</a>
+
+			<a href="#" class="callout security">
+				<svg class="security-icon" id="security-icon">
+					<use xlink:href="#icon__callout--security" />
+				</svg>
+
+				<h2>Bank-grade security and reliability</h2>
+				<p>Enterprise Level 1 PCI <br>DSS certified gateway, comprehensive risk management tools, uptime guarantee.</p>
+				<span href="#" class="btn-cta">Learn More</span>
+			</a>
+		</section>
+
+	{% include site-footer.html %}
+
+	</div>
+
+{% include document-footer.html %}

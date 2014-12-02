@@ -1,0 +1,48 @@
+//=============================================================================/
+//                            ALBERT YU & CO.                                  /
+//=============================================================================/
+//                                                                             /
+//       PROJECT: 141102                                                       /
+//        CLIENT: IPGPAY + BeansBox                                            /
+//   DELIVERABLE: Static front-end prototype                                   /
+//         CLASS: Atom                                                         /
+//         TITLE: Headings                                                     /
+//                                                                             /
+//=============================================================================/
+
+// styles for all headings, in the style of @csswizardry
+%hN {
+  text-rendering: optimizeLegibility; // voodoo to enable ligatures and kerning
+  line-height: 1; // this fixes huge spaces when a heading wraps onto two lines
+  margin-top: 0;
+
+  // @include font-smoothing(off);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+%h1, %h2, %h3, %h4, %h5, %h6 {
+  @extend %hN;
+  @extend %avenirLight;
+}
+
+h2,
+.h2,
+%h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+h3,
+.h3,
+%h3 {
+  font-size: 1.875rem;
+  margin-bottom: 1rem;
+}
+
+h5,
+.h5,
+%h5 {
+  font-size: 1rem;
+  // margin-bottom: 1rem;
+}

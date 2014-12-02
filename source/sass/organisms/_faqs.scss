@@ -1,0 +1,89 @@
+//=============================================================================/
+//                            ALBERT YU & CO.                                  /
+//=============================================================================/
+//                                                                             /
+//       PROJECT: 141102                                                       /
+//        CLIENT: IPGPAY + BeansBox                                            /
+//   DELIVERABLE: Static front-end prototype                                   /
+//         CLASS: Organism                                                     /
+//         TITLE: FAQs                                                         /
+//                                                                             /
+//=============================================================================/
+
+.faqs {
+  display: block;
+  position: relative;
+  box-shadow: inset 0 16px 21px -16px rgba(64,64,64,0.15),
+              inset 0 -30px 20px -33px rgba(64,64,64,0.25);
+}
+
+.faqs .inner {
+  position: relative;
+  display: block;
+  width: 694px;
+  margin: 0 auto;
+  @include outer-container(694px);
+}
+
+.faqs h1 {
+  text-align: center;
+  padding: 4.75rem 0 6rem;
+  color: desaturate(#4053AB, 20);
+}
+
+.faq-col {
+  @include span-columns(3 of 6);
+  &:first-of-type {
+    margin-left: -5rem;
+    margin-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+.faq-col > div {
+  margin-bottom: 3rem;
+}
+
+.faq-col input {
+  display: none;
+}
+
+.faq-col label{
+  position: relative;
+  z-index: 20;
+  display: block;
+  // height: 30px;
+  cursor: pointer;
+  color: desaturate(#94accd, 20);
+  // text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+  // line-height: 33px;
+  font-size: 1.375rem;
+  line-height: 1.5;
+  @extend %avenirLight;
+}
+
+.faq-col label:hover {
+  // color: darken(saturate(#94accd, 15), 15);
+  color: darken(#4C80CC, 15);
+}
+
+.faq-col article {
+  // background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  max-height: 0px;
+  position: relative;
+  z-index: 10;
+  margin-top: 1.875rem;
+
+  font-size: 1.125rem;
+  line-height: 1.625;
+  color: #6c6c6c;
+
+  transition: max-height 550ms ease-in-out;
+}
+
+.faq-col input:checked ~ article{
+  max-height: 100rem;
+  transition: max-height 750ms 550ms ease-in-out;
+  // box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}

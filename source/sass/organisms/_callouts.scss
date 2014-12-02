@@ -1,0 +1,141 @@
+//=============================================================================/
+//                            ALBERT YU & CO.                                  /
+//=============================================================================/
+//                                                                             /
+//       PROJECT: 141102                                                       /
+//        CLIENT: IPGPAY + BeansBox                                            /
+//   DELIVERABLE: Static front-end prototype                                   /
+//         CLASS: Organism                                                     /
+//         TITLE: Callouts                                                     /
+//                                                                             /
+//=============================================================================/
+
+.callouts {
+  @include outer-container(100%);
+  line-height: 0;
+}
+
+.callout {
+  position: relative;
+  @include span-columns(1 of 3);
+  padding: 3rem 4rem 7rem;
+  text-align: center;
+  color: #8e989f;
+  line-height: 0;
+}
+
+  .callout svg {
+    width: 120px;
+    margin: 0 auto;
+    @include transition(fill 350ms);
+  }
+
+  .callout h2 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    @include transition(color 350ms);
+  }
+
+  .callout p {
+    position: relative;
+    max-width: 17rem;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .callout > .btn-cta {
+    display: inline-block;
+    position: relative;
+    margin-top: 2rem;
+    padding: 0.4rem 2rem;
+    border: 1px solid #a8a8a8;
+    border-radius: 26px;
+
+    font-size: 15px;
+    line-height: 1;
+    color: #a8a8a8;
+  }
+
+  .callout:hover > .btn-cta {
+    border-color: #fafafa;
+    color: #eaeaea;
+  }
+
+  .btn-cta:hover {
+    background-color: #fafafa;
+  }
+
+// colors
+.callout {
+  &.features {
+    h2,
+    .btn-cta:hover {
+      color: #4E99CC;
+    }
+
+    svg {
+      fill: #4E99CC;
+    }
+  }
+
+  &.integration {
+    h2,
+    .btn-cta:hover {
+      color: #4C80CC;
+    }
+
+    svg {
+      fill: #4C80CC;
+    }
+  }
+
+  &.security {
+    padding-bottom: 5.35rem;
+
+    h2,
+    .btn-cta:hover {
+      color: #4A55CC;
+    }
+
+    svg {
+      fill: #4A55CC;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    h2,
+    p {
+      color: #fafafa;
+      @include transition(color 350ms);
+    }
+
+    svg {
+      fill: #fafafa;
+      @include transition(fill 350ms);
+    }
+  }
+}
+
+// bg images
+.callout.features:hover {
+  background: url("../assets/features-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.callout.integration:hover {
+  background: url("../assets/integration-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.callout.security:hover {
+  background: url("../assets/security-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

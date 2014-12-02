@@ -1,0 +1,19 @@
+//=============================================================================/
+//                            ALBERT YU & CO.                                  /
+//=============================================================================/
+//                                                                             /
+//       PROJECT: 141102                                                       /
+//        CLIENT: IPGPAY + BeansBox                                            /
+//   DELIVERABLE: Static front-end prototype                                   /
+//         CLASS: Utility                                                      /
+//         TITLE: Bourbon + Neat grid settings                                 /
+//                                                                             /
+//=============================================================================/
+
+@import "neat/neat-helpers";
+
+// Change the grid settings
+// $column: 90px;
+$gutter: 0em;
+$grid-columns: 12;
+// $max-width: em(1280);

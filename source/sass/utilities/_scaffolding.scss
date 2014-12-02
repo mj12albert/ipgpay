@@ -1,0 +1,38 @@
+//=============================================================================/
+//                            ALBERT YU & CO.                                  /
+//=============================================================================/
+//                                                                             /
+//       PROJECT: 141102                                                       /
+//        CLIENT: IPGPAY + BeansBox                                            /
+//   DELIVERABLE: Static front-end prototype                                   /
+//         CLASS: Utility                                                      /
+//         TITLE: Scaffolding                                                  /
+//                                                                             /
+//=============================================================================/
+
+html {
+  font: normal 87.5%/2 sans-serif;
+}
+
+body {
+  @extend %avenirBook;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fdfdfd;
+}
+
+// <div>
+.site-main {
+  position: relative;
+  margin: 0 auto;
+  width: 1280px;
+  background-color: #fefefe;
+}
+
+// <svg> sprite sheet (display:none; breaks the gradients)
+.sprite-sheet {
+  visibility: hidden;
+  position: absolute;
+  height: 0;
+  width: 0;
+}

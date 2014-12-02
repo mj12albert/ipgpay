@@ -1,0 +1,135 @@
+//=============================================================================/
+//                            ALBERT YU & CO.                                  /
+//=============================================================================/
+//                                                                             /
+//       PROJECT: 141102                                                       /
+//        CLIENT: IPGPAY + BeansBox                                            /
+//   DELIVERABLE: Static front-end prototype                                   /
+//         CLASS: Organism                                                     /
+//         TITLE: Navigation                                                   /
+//                                                                             /
+//=============================================================================/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  @include transform(translateY(0));
+}
+
+.header.dark {
+  // background-color: rgba(24,24,24, 0.25);
+  @include transition(all 200ms);
+}
+
+.header.light {
+  background-color: rgba(250,250,250, 0.95);
+  border-bottom: 1px solid #ededed;
+  @include transition(all 200ms);
+}
+
+.header.hidden {
+  @include transform(translateY(-100%));
+}
+
+// <ul>
+.navigation {
+  @extend %nav;
+  padding: 2.2rem 0 2rem;
+
+  text-align: center;
+  font-size: 1.125rem;
+
+  li:not(:last-of-type) {
+    margin-right: 3.75rem;
+  }
+}
+
+.dark > .navigation > li > a {
+  &:link,
+  &:active,
+  &:visited {
+    color: darken(#959598, 7);
+  }
+
+  &:hover,
+  &:focus {
+    // color: #fefeff;
+    color: lighten(#84AADD, 15);
+  }
+}
+
+.light > .navigation > li > a {
+  &:link,
+  &:active,
+  &:visited {
+    color: lighten(#959598, 3);
+  }
+
+  &:hover,
+  &:focus {
+    // color: #fefeff;
+    color: darken(saturate(#4C80CC, 10), 15);
+  }
+}
+
+// Signup button
+.btn-sign-up {
+  // float: right;
+  position: absolute;
+  top: 1.8rem;
+  right: 2rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0.875rem 2.5rem 0.75rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 26px;
+  @include transition(all 200ms);
+
+  border-color: rgba(112,146,170,0.25);
+  background-color: rgba(112,146,170,0.25);
+  color: lighten(desaturate(#4E99CC, 30), 25);
+}
+
+// Signup button states
+.dark .btn-sign-up {
+  &:link,
+  &:active,
+  &:visited {
+    border-color: rgba(112,146,170,0.25);
+    background-color: rgba(112,146,170,0.25);
+    color: lighten(desaturate(#4E99CC, 30), 25);
+    @include transition(all 200ms);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: saturate(#4C80CC, 10);
+    border-color: saturate(#4C80CC, 10);
+    color: #ededfa;
+    @include transition(all 200ms);
+  }
+}
+
+.light .btn-sign-up {
+  &:link,
+  &:active,
+  &:visited {
+    // border-color: rgba(206,226,237,0.45);
+    border-color: #4C80CC;
+    background-color: rgba(206,226,237,0.45);
+    color: #4C80CC;
+    @include transition(all 200ms);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: saturate(#4C80CC, 10);
+    border-color: saturate(#4C80CC, 10);
+    color: #ededfa;
+    @include transition(all 200ms);
+  }
+}

@@ -1,0 +1,27 @@
+//=============================================================================/
+//                            ALBERT YU & CO.                                  /
+//=============================================================================/
+//                                                                             /
+//       PROJECT: 141102                                                       /
+//        CLIENT: IPGPAY + BeansBox                                            /
+//   DELIVERABLE: Static front-end prototype                                   /
+//         CLASS: Molecule                                                     /
+//         TITLE: Navigation (csswizardry.com/2011/09/the-nav-abstraction/)    /
+//                                                                             /
+//=============================================================================/
+
+%nav {
+  list-style:none;
+  margin-left:0;
+  @extend .cf;
+
+  > li{
+
+    &,
+    > a{
+      display:inline-block;
+     *display:inline;
+      zoom:1;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+//=============================================================================/
+//                            ALBERT YU & CO.                                  /
+//=============================================================================/
+//                                                                             /
+//       PROJECT: 141102                                                       /
+//        CLIENT: IPGPAY + BeansBox                                            /
+//   DELIVERABLE: Static front-end prototype                                   /
+//         CLASS: Atom                                                         /
+//         TITLE: Links                                                        /
+//                                                                             /
+//=============================================================================/
+
+a {
+  text-decoration:    none;
+  @include transition(color 200ms ease-in-out);
+}
+
+a:link    {
+  color: $blue;
+  @include transition(color 200ms ease-in-out);
+}
+
+a:visited {
+  // color: $purple;
+}
+
+a:hover   {
+  color: $aqua;
+  @include transition(color 200ms ease-in-out);
+}
+
+a:active  {
+  color: $orange;
+  @include transition(color 200ms ease-in-out);
+}
