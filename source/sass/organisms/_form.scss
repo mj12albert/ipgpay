@@ -155,6 +155,11 @@ textarea.description {
   background: #3F30AB;
 }
 
+.fs-nav-dots button:nth-child(7):hover::before,
+.fs-nav-dots button:nth-child(7).fs-dot-current::before {
+  background: darken(#3F30AB, 5);
+}
+
 .fs-progress {
   top: 0;
   background: linear-gradient(to bottom, #486fbf 0%,#3f30ab 100%);

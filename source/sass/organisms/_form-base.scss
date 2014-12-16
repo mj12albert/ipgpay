@@ -369,6 +369,14 @@ button.fs-continue,
   background-image: url(../assets/senior.svg);
 }
 
+.fs-fields .fs-radio-custom label.radio-yes::after {
+  background-image: url(../assets/yes.svg);
+}
+
+.fs-fields .fs-radio-custom label.radio-no::after {
+  background-image: url(../assets/no.svg);
+}
+
 .fs-fields .fs-radio-custom label:hover::after,
 .fs-fields input[type="radio"]:focus + label::after,
 .fs-fields input[type="radio"]:checked + label::after {
