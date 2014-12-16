@@ -18,7 +18,7 @@ body {
   @extend %avenirBook;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  background-color: #fdfdfd;
+  background-color: #f8f8f8;
 }
 
 // <div>
@@ -27,6 +27,7 @@ body {
   margin: 0 auto;
   width: 1280px;
   background-color: #fefefe;
+  box-shadow: 0 0 70px -4px rgba(18, 18, 18, 0.55),
 }
 
 // <svg> sprite sheet (display:none; breaks the gradients)

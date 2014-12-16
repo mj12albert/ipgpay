@@ -37,13 +37,13 @@ var sassBuild = function() {
   return gulp.src('sass/**/*.{scss,sass}')
     .pipe(sass({
       bundleExec: true,
-      // compass: true,
+      trace: false,
       sourcemap: false
     }))
     .on('error', function(err) {
       logger.sassError(err);
     })
-    .pipe(rename("manifest.css"))
+    // .pipe(rename("manifest.css"))
     .pipe(minifycss({ keepSpecialComments: 0 }))
     .pipe(gulp.dest('./deploy/css'));
 };

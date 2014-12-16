@@ -10,35 +10,50 @@ route: home
 	<div class="site-main">
 
 		<nav class="header dark" id="header">
+      <svg class="logo-element-fullcolour" id="logo-element-fullcolour">
+        <use xlink:href="#icon-element-color" />
+      </svg>
+
 			<ul class="navigation">
 				<li><a href="#">Features</a></li>
 				<li><a href="#">Pricing</a></li>
 				<li><a href="#">Developers</a></li>
-				<li><a href="#">About</a></li>
+				<!-- <li><a href="#">About</a></li> -->
 				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact</a></li>
+				<!-- <li><a href="#">Contact</a></li> -->
 				<a href="/signup"class="btn-sign-up">Sign Up</a>
 			</ul>
 		</nav>
 
 		<section class="splash">
-			<video autoplay loop poster="/assets/bg.jpg" class="splash-video" id="splash-video">
-				<source src="/assets/bg.webm" type="video/webm">
+			<video autoplay loop poster="/assets/bg-ss2.jpg" class="splash-video" id="splash-video">
+				<source src="/assets/bg-ss2.webm" type="video/webm">
 			</video>
 
 			<div class="hero">
 				<div class="content">
-					<img src="/assets/logo.svg" alt="">
+					<!-- <img src="/assets/logo-blue.svg" alt="" class="logo"> -->
+					<svg class="logo" id="hero-logo">
+						<use xlink:href="#logo-type" />
+					</svg>
 					<h1>Online payment solutions <br>for Asia-Pacific</h1>
+
 					<a href="#" class="btn-hero-cta merchants">Merchants</a>
 					<a href="#" class="btn-hero-cta developers">Developers</a>
+
+					<svg class="credit-card-strip" >
+						<use xlink:href="#credit-cards" />
+					</svg>
 				</div>
 			</div>
 
 		</section>
 
 		<section class="cut-in light">
+
 			<h1>IPGPAY is a full-featured, easy-to-integrate payment gateway for online merchants looking for a flexible and customisable payment solution for growing businesses.</h1>
+
+			<!-- <h3>We support major credit card providers and over 40 currencies.</h3> -->
 		</section>
 
 		<section class="callouts">

@@ -16,11 +16,13 @@
   left: 0;
   right: 0;
   z-index: 99;
+  // max-width: 1280px;
   @include transform(translateY(0));
 }
 
 .header.dark {
-  // background-color: rgba(24,24,24, 0.25);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.08);
+  background-color: rgba(250,250,250, 0.04);
   @include transition(all 200ms);
 }
 
@@ -34,9 +36,21 @@
   @include transform(translateY(-100%));
 }
 
+.header svg {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 4.2rem;
+  height: 2.7rem;
+}
+
+
 // <ul>
 .navigation {
   @extend %nav;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1280px;
   padding: 2.2rem 0 2rem;
 
   text-align: center;

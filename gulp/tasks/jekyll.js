@@ -25,10 +25,10 @@ var jekyllWatch = function() {
 var jekyllBuild = function() {
   exec('bundle exec jekyll build', function(err, stdout, stderr) {
     // console.log(stdout);
-    return gulp.src(['build/index.html'])
-      .pipe(processhtml('index.html'))
-      .pipe(replace('manifest.css', 'styles.css'))
-      .pipe(replace('browserified.js', 'main.js'))
+    return gulp.src(['build/**/index.html'])
+      // .pipe(processhtml('index.html'))
+      // .pipe(replace('manifest.css', 'styles.css'))
+      // .pipe(replace('browserified.js', 'main.js'))
       .pipe(cleanhtml())
       .pipe(gulp.dest('deploy'));
   })
