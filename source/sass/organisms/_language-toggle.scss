@@ -10,12 +10,23 @@
 //                                                                             /
 //=============================================================================/
 
-// <div>
-.language-toggle {
+.language-toggle-wrapper {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+}
+
+// <div>
+.language-toggle {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  position: relative;
+  width: 1280px;
+  max-width: 1280px;
+  margin: 0 auto;
   height: 36px;
   background-color: #303030;
   // border-bottom: 2px solid #4c4c4c;

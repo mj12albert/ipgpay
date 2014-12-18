@@ -14,6 +14,10 @@ html {
   font: normal 87.5%/2 sans-serif;
 }
 
+html.home {
+  background-color: #f8f8f8;
+}
+
 body {
   @extend %avenirBook;
   text-rendering: optimizeLegibility;
@@ -27,9 +31,10 @@ body {
   margin: 0 auto;
   width: 1280px;
   background-color: #fefefe;
-  box-shadow: 0 0 70px -4px rgba(18, 18, 18, 0.55);
+  box-shadow: 0 -300px 70px -4px rgba(18, 18, 18, 0.45);
   // @include transform(translateY(48px));
   margin-top: 36px;
+  // padding-top: 36px;
 }
 
 // <svg> sprite sheet (display:none; breaks the gradients)
