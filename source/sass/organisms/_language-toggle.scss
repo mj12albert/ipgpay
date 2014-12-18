@@ -5,44 +5,48 @@
 //       PROJECT: 141102                                                       /
 //        CLIENT: IPGPAY + BeansBox                                            /
 //   DELIVERABLE: Static front-end prototype                                   /
-//         CLASS: Utility                                                      /
-//         TITLE: Scaffolding                                                  /
+//         CLASS: Organism                                                     /
+//         TITLE: Language toggle bar                                          /
 //                                                                             /
 //=============================================================================/
 
-html {
-  font: normal 87.5%/2 sans-serif;
-}
-
-body {
-  @extend %avenirBook;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  background-color: #f8f8f8;
-}
-
 // <div>
-.site-main {
-  position: relative;
-  margin: 0 auto;
-  width: 1280px;
-  background-color: #fefefe;
-  box-shadow: 0 0 70px -4px rgba(18, 18, 18, 0.55);
-  // @include transform(translateY(48px));
-  margin-top: 36px;
+.language-toggle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 36px;
+  background-color: #303030;
+  // border-bottom: 2px solid #4c4c4c;
 }
 
-// <svg> sprite sheet (display:none; breaks the gradients)
-.sprite-sheet {
-  visibility: hidden;
+// <ul>
+.languages {
+  @extend %nav;
   position: absolute;
-  height: 0;
-  width: 0;
+  right: 2rem;
 }
 
-body.test {
-  background-color: #fff;
-}
+  .languages li {
+  }
 
-// language toggle
+  .languages a {
+    padding: 5px 20px;
+    font-size: 13px;
 
+    &:link,
+    &:active,
+    &:visited {
+      color: #8c8c8c;
+    }
+
+    &:hover,
+    &:focus {
+      color: lighten(#84AADD, 15);
+    }
+  }
+
+  .languages li:not(:last-of-type) {
+    border-right: 1px solid #4c4c4c;
+  }

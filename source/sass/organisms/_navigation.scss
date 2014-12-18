@@ -17,23 +17,32 @@
   right: 0;
   z-index: 99;
   // max-width: 1280px;
+  // margin-top: 48px;
   @include transform(translateY(0));
 }
 
 .header.dark {
-  border-bottom: 1px solid rgba(200, 200, 200, 0.08);
-  background-color: rgba(250,250,250, 0.04);
+  border-top: 1px solid rgba(200, 200, 200, 0.1);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.1);
+  // background-color: rgba(250,250,250, 0.04);
+  background-color: rgba(24, 24, 24, 0.25);
   @include transition(all 200ms);
+  // margin-top: 48px;
+  // padding-top: 48px;
+  // top: 48px;
+  position: absolute;
+  // top: 48px;
 }
 
 .header.light {
   background-color: rgba(250,250,250, 0.95);
   border-bottom: 1px solid #ededed;
-  @include transition(all 200ms);
+  @include transition(all 400ms);
 }
 
 .header.hidden {
   @include transform(translateY(-100%));
+  @include transition(all 400ms);
 }
 
 .header svg {

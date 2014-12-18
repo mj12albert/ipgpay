@@ -23,9 +23,12 @@ $( document ).ready(function() {
   })
 
   $(window).scroll(function () {
-    if (($(window).scrollTop() >= headerHeight) && ($(window).scrollTop() < 640)) {
+    // console.log(headerHeight);
+    // console.log($(window).scrollTop());
+
+    if (($(window).scrollTop() >= headerHeight) && ($(window).scrollTop() < 584)) {
       header.addClass("hidden");
-    } else if ($(window).scrollTop() >= 640) {
+    } else if ($(window).scrollTop() >= 584) {
       header.removeClass("dark hidden").addClass("light");
     } else {
       header.removeClass("light hidden").addClass("dark");

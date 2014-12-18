@@ -12,6 +12,7 @@
 
 .splash {
   position: relative;
+  // @include transform(translateY(48px));
 }
 
 // <video>
@@ -24,7 +25,7 @@
 // <div>
 //  Control the darkness/lightness of the video and overlay with
 //  background-color on this div
-.hero {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
